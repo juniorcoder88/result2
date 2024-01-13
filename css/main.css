@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color1: #f89cab;
+  --color2: #eeeeee;
+  --color3: #7fd7eb;
+  --color4: #6929a5;
+  --color5: #db4f66;
+  --color6: #2d2d2d;
+  --color7: #f9ece6;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--color2);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color4);
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+::selection {
+  background-color: var(--color4);
+  color: white;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style: none;
+}
+/* ===================== */
+body {
+  font-family: "Cairo", sans-serif;
+  direction: rtl;
+}
+h2 {
+  background-color: rebeccapurple;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+form {
+  border: 1px solid rebeccapurple;
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  transition: box-shadow .5s;
+  -webkit-transition: box-shadow .5s;
+  -moz-transition: box-shadow .5s;
+  -ms-transition: box-shadow .5s;
+  -o-transition: box-shadow .5s;
+  font-size: 1.5em;
+}
+form:hover {
+  box-shadow: 0 0 10px rebeccapurple;
+}
+form input {
+  padding: 10px;
+  outline: none;
+  width: 100%;
+  font-size: 1.5em;
+  text-align: center;
+}
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: rebeccapurple;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+.result{
+  width: 80%;
+  margin: auto;
+  background-color: rebeccapurple;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+.result h3{
+  color:#7fd7eb;
+}
+footer{
+  background-color: rebeccapurple;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  /* position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%; */
+}
+footer a{
+  color: white;
+}
